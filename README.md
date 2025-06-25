@@ -47,14 +47,15 @@ Cada planeta representa un escenario visualmente único, con desafíos que te fo
 
 ### Requerimientos no funcionales
 
-- Compatibilidad con Windows y WebGL.
-- Rendimiento óptimo en equipos con GPU integrada (bajo-poly cuando sea posible).
+- Compatibilidad con Windows.
 - Accesibilidad: UI contrastada, controles configurables.
+- Compatible con teclado y mouse estándar, sin necesidad de hardware adicional.
+- Uso eficiente de memoria.
+- El código debe estar modularizado y seguir buenas prácticas.
 
 ### Restricciones
 
 - Limitaciones gráficas debido al rendimiento.
-- No incluir representaciones violentas o de contenido sensible.
 - No se utilizarán datos reales o personales.
 
 ### Supuestos de diseño
@@ -65,7 +66,7 @@ Cada planeta representa un escenario visualmente único, con desafíos que te fo
 
 - **Lenguaje de programación:** C#
 - **Motor de juego:** Unity 2022.x
-- **Bibliotecas:** Unity Input System, Cinemachine, ProBuilder
+- **Bibliotecas:** RigidBody 3D, Sistema de particulas de Unity
 - **Protocolo de comunicación:** N/A (juego local)
 - **Arquitectura:** Modular basada en componentes de Unity (scripting + prefabs + escenas)
 
@@ -93,7 +94,6 @@ Cada planeta representa un escenario visualmente único, con desafíos que te fo
 
 - Implementación de físicas planetarias no realistas
 - Administración del rendimiento en escenarios amplios
-- Control de cámara en terrenos irregulares
 
 ---
 
